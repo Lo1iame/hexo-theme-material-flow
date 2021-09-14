@@ -2,7 +2,12 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class='content'>
-        <%- tagcloud(site.tags, {
+        <%
+        // 过滤hide标签
+        const tags = site.tags
+        tags.data = tags.data.filter((tag)=>tag.name!=='hide')
+        %>
+        <%- tagcloud(tags, {
             min_font: 14, 
             max_font: 20, 
             color: true, 
