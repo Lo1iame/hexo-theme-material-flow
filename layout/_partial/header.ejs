@@ -2,10 +2,13 @@
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
 			<a class="logo flat-box dataset-logo" href='<%= url_for("/") %>'>
-				<div class="dataset-img">
+				<!-- <div class="dataset-img">
 					<img src="/dataset/images/IDRL logo.png" />
+				</div> -->
+				<div class="dataset-title">
+					<div class="big-title"><%- config.title %></div>
+					<div class="subtitle"><%- config.subtitle %></div>
 				</div>
-				<div class="dataset-title"><%- config.title %></div>
 			</a>
 			<div class='menu'>
 				<ul class='h-list'>

@@ -1,26 +1,29 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="post no-shandow white-box article-type-<%= post.layout %>"
 	itemscope itemprop="blogPost">
-	<!-- 菜单 -->
-	<% if (post.menu && post.menu.length>0) { %>
-	<div class="post-menus">
-		<% for (let i in post.menu) { %>
-		<div class="post-menu-item">
-			<a class="" href="<%= post.menu_links[i] %>"><%= post.menu[i] %> </a>
-		</div>
-		<% } %>
-	</div>
-	<% } %>
+
 
 	<section class='meta'>
-		<h2 class="title">
-			<a href="<%- url_for(post.path) %>">
-				<%= post.title %>
-			</a>
-		</h2>
-		<time>
-			<%= date(post.date, 'MMM D, YYYY') %>
-		</time>
-		<%- partial('categories',{post:post}) %>
+
+		<div class="title-bar">
+			<div class="title post-title">
+				<a href="<%- url_for(post.path) %>">
+					<%= post.title %>
+				</a>
+			</div>
+			<!-- 菜单 -->
+			<% if (post.menu && post.menu.length>0) { %>
+			<div class="post-menus">
+				<% for (let i in post.menu) { %>
+				<div class="post-menu-item">
+					<a class="" href="<%= post.menu_links[i] %>"><%= post.menu[i] %> </a>
+				</div>
+				<% } %>
+			</div>
+			<% } %>
+		</div>
+
+		<!-- 分类，暂时用不到 -->
+		<!-- <%- partial('categories',{post:post}) %> -->
 	</section>
 	<% if(post.toc!==false){ %>
 	<section class="toc-wrapper"><%- toc(post.content) %></section>

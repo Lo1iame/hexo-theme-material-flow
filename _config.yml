@@ -31,11 +31,17 @@ links:
 menu:
   - name: 首页
     slug: home
-    url: /
-  - name: 数据集
-    slug: archives
-    url: /archives
-  - name: 出版物
+    url: /main
+  - name: 基准
+    slug: home
+    url: /#data
+  - name: 比赛
+    slug: match
+    url: /match
+  - name: 文档
+    slug: support
+    url: /support
+  - name: 相关成果
     slug: publish
     url: /publish
 
