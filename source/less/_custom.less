@@ -11,7 +11,7 @@ body{
 .column-span-all{
     column-span: all;
     .post-article-content{
-        width: calc(100% - 110px);
+        max-width: calc(100% - 120px);
     }
 }
 
@@ -21,13 +21,14 @@ body{
     justify-content: stretch;
     .post-preview-img{
         
-        margin-right: 10px;
+        margin-right: 20px;
         .preview-img{
             max-height: 200px;
+            min-width: 200px;
+            max-width: 400px!important;
             margin: 0!important;
             padding: 0!important;
-            max-width: none!important;
-            width: 100%!important;
+            width: auto!important;
             height: 100%!important;
             object-fit: contain!important;            
         }
