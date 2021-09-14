@@ -13,7 +13,7 @@
 <% } %>
 <section class="post-list">
 	<% page.posts.each(function(post){ %>
-    <div class='post-wrapper'>
+    <div class='post-wrapper <%- post.icon?'column-span-all':'' %>'>
       <%- partial('post', {post: post}) %>
     </div>
   <% }) %>

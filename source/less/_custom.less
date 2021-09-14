@@ -1,0 +1,117 @@
+// global
+body{
+    background-color: #fff;
+}
+.container{
+    max-width: calc(100% - 50px);
+}
+
+
+// post
+.column-span-all{
+    column-span: all;
+    .post-article-content{
+        width: calc(100% - 110px);
+    }
+}
+
+.post-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    .post-preview-img{
+        
+        margin-right: 10px;
+        .preview-img{
+            max-height: 200px;
+            margin: 0!important;
+            padding: 0!important;
+            max-width: none!important;
+            width: 100%!important;
+            height: 100%!important;
+            object-fit: contain!important;            
+        }
+    }
+    .post-article-content{
+
+    }
+}
+
+.post-index .tags {
+    position: relative;
+    padding-top: @gap/2;
+    padding-bottom: @gap/2;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: @gap;
+    background: @qoute-background-color;
+    &.article-tags {
+        background: transparent;
+    }
+    word-spacing: @gap/2;
+    a {
+        position: relative;
+        display: inline-block;
+        word-spacing: 0;
+        // &+a{
+        //   margin-left: @gap/2;
+        // }
+        .enable-trans(.1s);
+        //background:@material-light-grey;
+        color: @grey-color;
+        &:hover {
+            color: @accent-color;
+            background: transparent;
+        }
+        &::before {
+            content: "#";
+        }
+    }
+}
+
+
+// article
+.l_body{
+    padding-top: 60px;
+    background-color: #fff
+}
+.no-shandow{
+    border: none;
+    box-shadow: none!important;
+}
+.post-menus{
+    height: 50px;
+    padding: 0px 16px;
+    box-sizing: border-box;
+    background: #3367d6;
+    position: absolute;
+    top: -60px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    animation: fade-in .3s;
+    
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    .post-menu-item{
+        a{
+            transition: all 0.24s ease-out;
+            display: block;
+            padding: 0 10px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        a:hover, a:active{
+            color: #ffffff;
+        }
+
+    }
+}
+
+@keyframes fade-in{
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
