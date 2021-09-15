@@ -1,0 +1,18 @@
+home: 首页
+benchmark: 基准
+match: 比赛
+support: 文档
+publish: 相关成果
+search: 搜索
+previous: 上一页
+next: 下一页
+
+article:
+  prev: 上一篇
+  next: 下一篇
+
+about:
+  author: IDRL
+  desc: 国防科技创新研究院无人系统技术研究中心智能设计与鲁棒学习团队致力于人工智能与飞行器设计的基础前沿和交叉研究，面向飞行器多学科高效分析与优化，发展了系列数据和知识混合驱动的深度学习方法，形成了全自主知识产权的智能辅助飞行器设计优化云平台 IDaaS（Intelligent Design as a Service）原型系统，集成卫星组件热布局温度场近实时预测基准工具箱 STEP（Satellite Temperature fiEld Prediction of heat source layout）、内嵌物理知识神经网络算法框架 IDRLNet 等前沿研究成果。近 3 年团队发表相关学术论文 30 余篇，其中高影响因子 SCI 检索 20 篇，申请专利 30 余项。
+  links: 相关链接
+  tags: 标签

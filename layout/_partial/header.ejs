@@ -15,7 +15,7 @@
 					<% (theme.menu||[]).forEach(function(value){ %>
 					<li>
 						<a class='flat-box nav-<%=value.slug%>' href='<%=url_for(value.url)%>'>
-							<%=value.name%>
+							<%= _p(value.name) %>
 						</a>
 					</li>
 					<%})%>
@@ -25,7 +25,7 @@
 			<% if (theme.search.enable === true) { %>
 			<div class="m_search">
 				<form name="searchform" class="form u-search-form">
-					<input type="text" class="input u-search-input" placeholder="Search" />
+					<input type="text" class="input u-search-input" placeholder="<%= _p('search') %>" />
 					<span class="icon icon-search"></span>
 				</form>
 			</div>
