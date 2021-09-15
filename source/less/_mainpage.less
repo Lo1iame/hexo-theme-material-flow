@@ -7,7 +7,7 @@
         flex-wrap: wrap;
         .menus-item-wrapper{
             margin: 20px 0;
-            width: 350px;
+            width: 30%;
             height: 150px;
             border: 1px solid #ddd;
             display: flex;
@@ -35,6 +35,16 @@
                     margin-top: 10px;
                     font-size: 13px;
                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main_page{
+        .menus{
+            .menus-item-wrapper{
+                width: 100%;
             }
         }
     }
